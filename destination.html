@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/navbar.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+</head>
+<style>
+    body {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f2f5;
+        ;
+    }
+
+    .hover-color:hover {
+        color: #8514d1;
+    }
+
+    .navigation {
+        background-color: #7E82FF;
+        height: 70px;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .title a {
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
+    }
+
+    .title a:active {
+        opacity: 0.6;
+    }
+
+    .content {
+        margin-top: 10px;
+
+    }
+
+    .content ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+        margin-bottom: 7px;
+
+    }
+
+    .content a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        padding: 30px;
+
+    }
+
+
+    /* search bar */
+    #Search {
+        width: 300px;
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 15px 0px 0px 15px;
+
+        padding: 0px 0px 0px 15px;
+        margin-left: 30px;
+
+        font-size: 15px;
+
+    }
+
+    #Search-btn {
+        border: none;
+        height: 41.5px;
+        width: 80px;
+        border-radius: 0px 15px 15px 0px;
+        font-size: 15px;
+
+        background-color: black;
+        color: white;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    .section h2 {
+        color: #333;
+    }
+
+    .destination {
+        margin-bottom: 30px;
+    }
+
+    .destination img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .Heading1 {
+        margin-top: 85px;
+        text-align-last: center;
+    }
+
+    .destination {
+        text-align: center;
+    }
+
+    .images {
+        height: 300px;
+        width: 350px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgb(101, 86, 86);
+        transition: all .2s ease-in-out;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <span class="title">
+                <a href="index.html"><b>OnClickTravels</b></a>
+            </span>
+            <span class="content">
+                <ul>
+                    <li><a class="hover-color" href="destination.html">Destinations</a></li>
+                    <li><a class="hover-color" href="activity.html">Activities</a></li>
+                    <li><a class="hover-color" href="about.html">About us</a></li>
+                    <li><input type="text" id="Search" placeholder="Welcome To Delhi!!"></li>
+                    <li><button id="Search-btn" class="hover-color">Search</button></li>
+                </ul>
+            </span>
+        </nav>
+    </header>
+
+
+
+    <section id="destinations">
+        <h1 class="Heading1">POPULAR DESTINATIONS</h1>
+        <div class="destination">
+            <img class="images"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/India_Gate_in_New_Delhi_03-2016.jpg/400px-India_Gate_in_New_Delhi_03-2016.jpg"
+                alt="Destination 1">
+            <h2 class="destination_heading">INDIA GATE</h2>
+            <p>The India Gate (formerly known as All India War Memorial) is a war memorial located near the Kartavya
+                path on the
+                eastern edge of the "ceremonial axis" of New Delhi, formerly called Rajpath. It stands as a memorial to
+                74,187 soldiers
+                of the Indian Army who died between 1914 and 1921 in the First World War, in France, Flanders,
+                Mesopotamia, Persia, East Africa,
+                Gallipoli and elsewhere in the Near and the Far East, and the Third Anglo-Afghan War. 13,300
+                servicemen's names, including some
+                soldiers and officers from the United Kingdom, are inscribed on the gate. Designed by Sir Edwin Lutyens,
+                the gate evokes the
+                architectural style of the ancient Roman triumphal arches such as the Arch of Constantine in Rome, and
+                later memorial arches; it
+                is often compared to the Arc de Triomphe in Paris, and the Gateway of India in Mumbai.<br>
+
+                Following the Bangladesh Liberation war in 1972, a structure consisting of a black marble plinth with a
+                reversed rifle, capped by a
+                war helmet and bounded by four eternal flames, was built beneath the archway. This structure, called
+                Amar Jawan Jyoti (Flame of the
+                Immortal Soldier), has since 1971 served as India's tomb of the unknown soldier. India Gate is counted
+                amongst the largest war
+                memorials in India and every Republic Day, the Prime Minister visits the gate to pay their tributes to
+                the Amar Jawan Jyoti,
+                following which the Republic Day parade starts. India Gate is often a location for civil society
+                protests, and is popular with
+                tourists.<br>
+
+                The India Gate was part of the work of the Imperial War Graves Commission (IWGC), which came into
+                existence in December 1917 under
+                the British rule for building war graves and memorials to soldiers who were killed in the First World
+                War. The foundation stone
+                of the gate then called the All India War Memorial, was laid on 10 February 1921, at 16:30, by the
+                visiting Duke of Connaught in a
+                ceremony attended by officers and men of the Imperial Indian Army, Imperial Service Troops, the
+                commander in chief, and Chelmsford,
+                the viceroy. On the occasion, the viceroy is reported to have said, "The stirring tales of individual
+                heroism, will live forever
+                in the annals of this country", and that the memorial which was a tribute to the memory of heroes,
+                "known and unknown", would
+                inspire future generations to endure hardships with similar fortitude and "no less valor". <br>
+                The Duke also read out a message by the King, which said, "On this spot, in the central vista of the
+                Capital of India, there
+                will stand a Memorial Archway, designed to keep", in the thoughts of future generations, "the glorious
+                sacrifice of the officers
+                and men of the Indian Army who fought and fell". During the ceremony, the Deccan Horse, 3rd Sappers and
+                Miners, 6th Jat Light
+                Infantry, 34th Sikh Pioneers, 39th Garhwal Rifles, 59th Scinde Rifles (Frontier Force), 117th Mahrattas,
+                and 5th Gurkha Rifles.
+                The land was owned by contractor Sir Sobha Singh who helped construct large tracts of New Delhi and was
+                the primary contractor.<br></p>
+        </div>
+        <div class="destination">
+            <img class="images"
+                src="https://lh3.googleusercontent.com/p/AF1QipNT3MFYBjz2Mf13lhr3Ib3742ksR0rVlVphOy5z=s1360-w1360-h1020"
+                alt="Destination 2">
+            <h2 class="destination_heading">Red Fort</h2>
+            <p>The Red Fort or Lal Qila is a historic fort in the Old Delhi neighbourhood of Delhi, India, that
+                historically served as the main
+                residence of the Mughal emperors. Emperor Shah Jahan commissioned construction of the Red Fort on 12 May
+                1639, when he decided to
+                shift his capital from Agra to Delhi. Originally red and white, its design is credited to architect
+                Ustad Ahmad Lahori, who also
+                constructed the Taj Mahal. The fort represents the peak in the Mughal architecture under Shah Jahan and
+                combines Persian palace
+                architecture with Indian traditions.
+
+                The fort was plundered of its artwork and jewels during Nader Shah's invasion of the Mughal Empire in
+                1739. Most of the fort's
+                marble structures were subsequently demolished by the British following the Indian Rebellion of 1857.
+                The fort's defensive walls
+                were largely undamaged, and the fortress was subsequently used as a garrison.
+
+                On 15 August 1947, the first Prime Minister of India, Jawaharlal Nehru, raised the Indian flag above the
+                Lahori Gate. Every year
+                on India's Independence Day (15 August), the prime minister hoists the Indian tricolour flag at the
+                fort's main gate and delivers
+                a nationally broadcast speech from its ramparts through the Public Address System of Indian Army Corps
+                of Signals.The Red Fort was
+                designated a UNESCO World Heritage Site in 2007 as part of the Red Fort Complex.<br>
+                Emperor Shah Jahan commissioned construction of the Red Fort on 12 May 1638, when he decided to shift
+                his capital from Agra to Delhi.
+                Originally red and white, Shah Jahan's favourite colours, its design is credited to architect Ustad
+                Ahmad Lahori, who also
+                constructed the Taj Mahal. The fort lies along the Yamuna River, which fed the moats surrounding most of
+                the walls.
+                Construction began in the sacred Islamic month of Muharram, on 13 May 1638. Supervised by Shah Jahan, it
+                was completed
+                on 6 April 1648. Unlike other Mughal forts, the Red Fort's boundary walls are asymmetrical to contain
+                the older
+                Salimgarh Fort. The fortress-palace was a focal point of the city of Shahjahanabad, which is present-day
+                Old Delhi.
+                Shah Jahan's successor, Aurangzeb, added the Moti Masjid (Pearl Mosque) to the emperor's private
+                quarters, constructing barbicans
+                in front of the two main gates to make the entrance to the palace more circuitous. Image shows Red
+                Fort's long walls including
+                the gates as seen from Jama Masjid's tower. The walls can be seen in the background extending a couple
+                of thousand meters.
+                The administrative and fiscal structure of the Mughal dynasty declined after Aurangzeb, and the 18th
+                century saw a degeneration
+                of the palace. In 1712 Jahandar Shah became the Mughal Emperor. Within a year of beginning his rule,
+                Shah was murdered and replaced
+                by Farrukhsiyar. In 1739, Persian emperor Nadir Shah easily defeated the strong Mughal army of around
+                200,000 soldiers,
+                plundering the Red Fort, including the Peacock Throne. Nadir Shah returned to Persia after three months,
+                leaving a destroyed
+                city and a weakened Mughal empire to Muhammad Shah.</p>
+        </div>
+        <div class="destination">
+            <img class="images"
+                src="https://ichef.bbci.co.uk/news/1536/cpsprodpb/143BF/production/_124897828_gettyimages-541363304-170667a.jpg.webp"
+                alt="Destination 2">
+            <h2 class="destination_heading">Qutub Minar</h2>
+            <p>The Qutb Minar, also spelled Qutub Minar and Qutab Minar, is a minaret and "victory tower" that forms
+                part of the Qutb complex,
+                which lies at the site of Delhi's oldest fortified city, Lal Kot, founded by the Tomar Rajputs. It
+                consists of 399 steps
+                It is a UNESCO World Heritage Site in the Mehrauli area of South Delhi, India. It is one of the most
+                visited tourist
+                spots in the city, mostly built between 1199 and 1220.
+
+                It can be compared to the 62-metre all-brick Minaret of Jam in Afghanistan, of 1190, which was
+                constructed a decade or so
+                before the probable start of the Delhi tower. The surfaces of both are elaborately decorated with
+                inscriptions and geometric
+                patterns. The Qutb Minar has a shaft that is fluted with "superb stalactite bracketing under the
+                balconies" at the top of each
+                stage. In general, minarets were slow to be used in India and are often detached from the main mosque
+                where they
+                exist. In recent years, the Qutub Minar has been illuminated for special occasions involving
+                international relations. In
+                September 2023, the monument was lit up in the colors of the Mexican flag to celebrate Mexico's 213th
+                Independence Day, an
+                event that was acknowledged and appreciated by the Embassy of Mexico in India. Similarly, on October 30,
+                the Qutub Minar
+                was illuminated with the Turkish flag to commemorate the 100th anniversary of the Republic of Turkey, an
+                occasion that received
+                special attention from the Turkish Embassy in New Delhi.<br>
+                The tower includes elements of traditional Islamic architecture and southwestern Asian design. Elizabeth
+                Lambourn's Islam
+                Beyond Empires: Mosques and Islamic Landscapes in India and the Indian Ocean studies the introduction of
+                Islam in South Asia
+                and how the region influenced the Islamic religious architecture. These newly arrived Muslims from the
+                Islamic West escaped
+                the Mongol Empire and emigrated to India, where they constructed religious centers. The Qutb Minar
+                serves as a central marker
+                to these new Muslim communities as well as being a reminder of Islam's presence in the area. The
+                architecture of the
+                minaret varies greatly from that of the typical style and design of the mosques constructed in the
+                Middle East. The style of
+                these structures is influenced by the local architecture such as the Indic temples. This affected the
+                different materials,
+                techniques, and decoration that were used in the construction of the Qutb Minar. Historically, tower
+                minarets were uncommon
+                in South Asian-Islamic design until the 17th century, due to the slow adoption of the typical Middle
+                Eastern style in India.
+                It is also detached from the main mosque, showcasing how the native culture affected the design of a
+                Middle Eastern structure.
+                The Qutb Minar is seen as the "earliest and best example of a fusion or synthesis of Hindu-Muslim
+                traditions" according to Ved Parkash
+                in his essay The Qutb Minar from Contemporary and Near Contemporary Sources. Like many mosques built in
+                South Asia during this time
+                period, the minaret was constructed by Hindu laborers and craftsmen but overseen by Muslim architects.
+                This led to a construction
+                that synthesized both Hindu and Islamic religious architecture. Since some of the craftsmen were Hindu
+                and unfamiliar with the Quran,
+                the inscriptions are a compilation of disarranged Quranic texts and other Arabic expressions.</p>
+        </div>
+        <div class="destination">
+            <img class="images" src="https://www.savaari.com/blog/wp-content/uploads/2023/06/Humayun_tomb_11.webp"
+                alt="Destination 2">
+            <h2 class="destination_heading">Humayun's Tomb</h2>
+            <p>Humayun's tomb (Urdu: ہمائیوں کا مقبرہ) (Persian: Maqbara-i Humayun) is the tomb of Mughal emperor, Mirza
+                Nasir al-Din Muhammad
+                commonly known as Humayun situated in Delhi, India. The tomb was commissioned by Humayun's first wife
+                and chief consort,
+                Empress Bega Begum under her patronage in 1558, and designed by Mirak Mirza Ghiyas and his son, Sayyid
+                Muhammad,
+                Persian architects chosen by her. It was the first garden-tomb on the Indian subcontinent, and is
+                located in
+                Nizamuddin East, Delhi, close to the Dina-panah Citadel, also known as Purana Qila (Old Fort), that
+                Humayun found in 1538. It
+                was also the first structure to use red sandstone at such a scale. The tomb was declared a UNESCO World
+                Heritage Site
+                in 1993, and since then has undergone extensive restoration work, which is complete. Besides the main
+                tomb enclosure of
+                Humayun, several smaller monuments dot the pathway leading up to it, from the main entrance in the West,
+                including one that
+                even pre-dates the main tomb itself, by twenty years; it is the tomb complex of Isa Khan Niazi, an
+                Afghan noble in Sher Shah
+                Suri's court of the Suri dynasty, who fought against the Mughals, constructed in 1547 CE.
+
+                The complex encompasses the main tomb of the Emperor Humayun, which houses the graves of Empress Bega
+                Begum, Hajji Begum, and
+                also Dara Shikoh, great-great-grandson of Humayun and son of the later Emperor Shah Jahan, as well as
+                numerous other subsequent
+                Mughals, including Emperor Jahandar Shah, Farrukhsiyar, Rafi Ul-Darjat, Rafi Ud-Daulat, Muhammad Kam
+                Bakhsh and Alamgir II. It
+                represented a leap in Mughal architecture, and together with its accomplished Charbagh garden, typical
+                of Persian gardens, but
+                never seen before in India, it set a precedent for subsequent Mughal architecture. It is seen as a clear
+                departure from the
+                fairly modest mausoleum of his father, the first Mughal Emperor, Babur, called Bagh-e Babur (Gardens of
+                Babur) in Kabul
+                (Afghanistan). Though the latter was the first Emperor to start the tradition of being buried in a
+                paradise garden. Modelled
+                on Gur-e Amir, the tomb of his ancestor and Asia's conqueror Timur in Samarkand, it created a precedent
+                for future Mughal
+                architecture of royal mausolea, which reached its zenith with the Taj Mahal, at Agra.<br>
+
+                The site was chosen on the banks of Yamuna River, due to its proximity to Nizamuddin Dargah, the
+                mausoleum of the celebrated
+                Sufi saint of Delhi, Nizamuddin Auliya, who was much revered by the rulers of Delhi, and whose
+                residence, Chilla Nizamuddin
+                Auliya lies just north-east of the tomb. In later Mughal history, the last Mughal Emperor, Bahadur Shah
+                Zafar took refuge here,
+                during the Indian Rebellion of 1857, along with three princes, and was captured by Captain Hodson before
+                being exiled to Rangoon.
+                At the time of the Slave Dynasty this land was under the 'KiloKheri Fort' which was capital of Sultan
+                Qaiqabad, son of
+                Nasiruddin(1268–1287).
+
+                The Tombs of Battashewala Complex lie in the buffer zone of the World Heritage Site of the Humayun Tomb
+                Complex; the two
+                complexes are separated by a small road but enclosed within their own separate compound wall.</p>
+        </div>
+
+        <div class="destination">
+            <img class="images"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/LotusDelhi.jpg/500px-LotusDelhi.jpg"
+                alt="Destination 2">
+            <h2 class="destination_heading">Lotus Temple</h2>
+            <p>The Lotus Temple, located in New Delhi, India, is a Baháʼí House of Worship that was dedicated in
+                December 1986.
+                Notable for its lotus-like shape, it has become a prominent attraction in the city. Like all Bahá’í
+                Houses of Worship,
+                the Lotus Temple is open to all, regardless of religion or any other qualification. The building is
+                composed of 27
+                free-standing marble-clad "petals" arranged in clusters of three to form nine sides, with nine doors
+                opening onto a central
+                hall with a height of slightly over 34 metres and a capacity of 1,300 people. The Lotus Temple has won
+                numerous
+                architectural awards and has been featured in many newspaper and magazine articles.
+                The architect of the Lotus Temple was an Iranian, Fariborz Sahba who now lives in La Jolla, California,
+                after spending some
+                years in Canada. He was approached in 1976 to design the Lotus Temple and later oversaw its
+                construction. The structural
+                design was undertaken by the British firm Flint and Neill over the course of 18 months, and the
+                construction was done by
+                ECC Construction Group of Larsen & Toubro Limited at a cost of $10.56 million. The major part of the
+                funds needed to buy this land was donated by Ardishír Rustampúr of Hyderabad, Sindh (Pakistan), whose
+                will stipulated that his
+                entire life savings would go towards the building of the temple. A portion of the construction budget
+                was
+                saved and used to build a greenhouse to study indigenous plants and flowers that would be appropriate
+                for use on the site.
+                Rúhíyyih Khánum laid the foundation stone for the Lotus Temple on 19 October 1977 and dedicated the
+                temple on 24 December 1986.
+                For the dedication, there was a gathering of 8,000 Baháʼís from 107 countries, including some 4,000
+                Baháʼís from 22 states
+                in India. The temple was opened to the public on 1 January 1987 and more than 10,000 people visited that
+                day.<br>
+                All Baháʼí Houses of Worship, including the Lotus Temple, share certain architectural elements, some of
+                which are specified by
+                Baháʼí scripture. ʻAbdu'l-Bahá, the son of the founder of the religion, wrote that Baháʼí Houses of
+                Worship must be nine-sided
+                and circular. While all current Baháʼí Houses of Worship have a dome, this is not regarded as an
+                essential part of their
+                architecture. The Baháʼí scripture also states that no pictures, statues or images may be displayed
+                within the House of
+                Worship, and no pulpits or altars may be incorporated as an architectural feature (readers may stand
+                behind simple portable
+                lecture stands). The design for the House of Worship in New Delhi is inspired by the lotus flower and is
+                composed of
+                27 free-standing marble-clad "petals" arranged in clusters of three to form nine sides. The temple's
+                shape has symbolic
+                and inter-religious significance because the lotus is often associated with purity, sacredness,
+                spirituality, and knowledge.
+                It has a spiritual significance in India. The nine doors of the Lotus Temple open onto a central hall
+                34.3 metres tall
+                that can seat 1,300 people and hold up to 2,500 people. The temple has a diameter of 70 m. The surface
+                of the House
+                of Worship is made of white marble from Penteli mountain in Greece, the same marble used in the
+                construction of many ancient
+                monuments and other Baháʼí buildings. Along with its nine surrounding ponds and gardens,
+                the Lotus Temple property comprises 26 acres (105,000 m2; 10.5 ha). An educational centre beside the
+                temple was established
+                in 2017.
+                The Lotus Temple is situated near the Kalkaji Mandir metro station about 500 metres away. It is in the
+                village of Bahapur in
+                New Delhi, National Capital Territory of Delhi, near Nehru Place and lies on the western bank of the
+                Yamuna River.
+
+                Of the temple's total electricity use of 500 kilowatts (kW), 120 kW is provided by solar power generated
+                by solar panels on
+                the building. This saves the temple ₹120,000 per month. It is the first temple in Delhi to use solar
+                power.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to book a trip? Reach out to us!</p>
+        <form action="contact.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <br><br>
+    <footer>
+        <p>&copy; 2024 Travel Destinations. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -9,76 +9,142 @@
   <link rel="stylesheet" href="Styles/navbar.css">
   <link rel="stylesheet" href="Styles/utility.css">
   <link rel="stylesheet" href="Styles/footer.css">
+  <link rel="stylesheet" href="Styles/frame.css">
+  <link rel="stylesheet" href="Styles/tranding.css">
 </head>
 
 <body>
   <nav class="navigation">
     <span class="title">
-      <a href="index.html"><b>OnClickTravels</b></a>
+      <a href="index.html" class="tite-link"><b>OnClickTravels</b></a>
     </span>
     <span class="content">
       <ul>
-        <li><a class="hover-color" href="#">Destinations</a></li>
-        <li><a class="hover-color" href="#">Activities</a></li>
-        <li><a class="hover-color" href="#">About us</a></li>
-        <li><input type="text" id="Search" placeholder="Welcome To Delhi!!"></li>
-        <li><button id="Search-btn" class="hover-color">Search</button></li>
+        <li>
+          <a class="container-link" href="destination.html">Destinations</a>
+        </li>
+        <li>
+          <a class="container-link" href="activity.html">Activities</a>
+        </li>
+        <li>
+          <a class="container-link" href="about.html">About us</a>
+        </li>
+        <li>
+          <input type="text" id="Search" placeholder="Welcome To Delhi!!">
+        </li>
+        <li>
+          <button id="Search-btn" class="hover-color" onclick="window.location.href='search.html';">Search</button>
+        </li>
       </ul>
     </span>
   </nav>
-
+  <br><br>
   <div class="map">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224034.30710660148!2d77.00534062499995!3d28.673607332628603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1712226386974!5m2!1sen!2sin"
-      width="1000vw" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
+      width="1000vw" height="550" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      id="frame"></iframe>
   </div>
-
   <br>
+  <hr>
   <div class="trending">
     <h2>Best places to visit in 2024</h2>
+    <br>
     <div class="container">
-      <div class="container-img">
-        <div class="container-img-1">
+      <div class="container-each">
+        <div class="image">
           <img src="download.jpg" alt="">
         </div>
         <p style="text-align: center; font-size: 20px;">Qutub Minar</p>
+        <div class="content">
+          <p>Qutub Minar, standing tall amidst the bustling city of Delhi, epitomizes centuries of architectural
+            splendor and cultural heritage.</p>
+        </div>
+        <div class="btn-container">
+          <button class="Explore-btn container-btn">Explore</button>
+          <button class="GM-btn container-btn">Travel</button>
+        </div>
       </div>
-      <div class="container-img">
-        <div class="container-img-2">
+      <div class="container-each">
+        <div class="image">
           <img src="India_Gate,_New_Delhi_at_Night.jpg" alt="">
         </div>
         <p style="text-align: center; font-size: 20px;">India Gate</p>
+        <div class="content">
+          <p>India Gate, an iconic monument in the heart of New Delhi, stands as a solemn tribute to the valor and
+            sacrifice of Indian soldiers who laid down their lives in World War I and the Afghan Wars, embodying the
+            nation's eternal gratitude and resilience.</p>
+        </div>
+        <div class="btn-container">
+          <button class="Explore-btn container-btn">Explore</button>
+          <button class="GM-btn container-btn">Travel</button>
+        </div>
       </div>
-      <div class="container-img">
-        <div class="container-img-2">
+      <div class="container-each">
+        <div class="image">
           <img src="download (3).jpg" alt="">
         </div>
         <p style="text-align: center; font-size: 20px;">Bangla Sahib</p>
+        <div class="content">
+          <p>Bangla Sahib, a serene Sikh gurdwara in the heart of New Delhi, welcomes devotees and visitors alike with
+            its spiritual ambiance and community service, reflecting the essence of Sikh faith and hospitality.</p>
+        </div>
+        <div class="btn-container">
+          <button class="Explore-btn container-btn">Explore</button>
+          <button class="GM-btn container-btn">Travel</button>
+        </div>
       </div>
-      <div class="container-img">
-        <div class="container-img-2">
+      <div class="container-each">
+        <div class="image">
           <img src="download (2).jpg" alt="">
         </div>
         <p style="text-align: center; font-size: 20px;">Akshardham</p>
+        <div class="content">
+          <p>Akshardham, a masterpiece of architecture and spirituality in Delhi, invites visitors to experience the
+            beauty of Indian culture, art, and heritage through its magnificent temple complex and cultural exhibitions.
+          </p>
+        </div>
+        <div class="btn-container">
+          <button class="Explore-btn container-btn">Explore</button>
+          <button class="GM-btn container-btn">Travel</button>
+        </div>
       </div>
-      <div class="container-img">
-        <div class="container-img-2">
+      <div class="container-each">
+        <div class="image">
           <img src="images.jpg" alt="">
         </div>
         <p style="text-align: center; font-size: 20px;">Red Fort</p>
+        <div class="content">
+          <p>Red Fort, a symbol of India's rich history and architectural grandeur, stands as a majestic reminder of the
+            Mughal era's glory, inviting visitors to immerse themselves in its captivating stories and royal splendor.
+          </p>
+        </div>
+        <div class="btn-container">
+          <button class="Explore-btn container-btn">Explore</button>
+          <button class="GM-btn container-btn">Travel</button>
+        </div>
       </div>
-      <div class="container-img">
-        <div class="container-img-2">
+      <div class="container-each">
+        <div class="image">
           <img src="download (1).jpg" alt="">
         </div>
         <p style="text-align: center; font-size: 20px;">Jama Masjid</p>
+        <div class="content">
+          <p>Jama Masjid, one of the largest and most splendid mosques in India, stands as a timeless testament to the
+            architectural prowess and cultural richness of the Mughal era, offering visitors a glimpse into the
+            country's diverse religious heritage.</p>
+        </div>
+        <div class="btn-container">
+          <button class="Explore-btn container-btn">Explore</button>
+          <button class="GM-btn container-btn">Travel</button>
+        </div>
       </div>
     </div>
   </div>
-  <br>
+  <br><br>
   <footer>
     <p>&copy; 2024 Travel Website</p>
   </footer>
+</body>
 
 </html>
