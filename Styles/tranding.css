@@ -11,13 +11,14 @@
 
 .container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     height: 63vh;
 
     background-color: var(--color-1);
 }
 
 .container-each {
+    border-radius: 10px;
     position: relative;
     background-color: var(--color-2);
     height: 450px;
